@@ -1,0 +1,317 @@
+
+
+/*Here onwards menu page css*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background:#D3D3D3;
+}
+body{
+	background:#D3D3D3;
+	padding:10px;
+}
+.wrapper{
+	text-align:center;
+	margin:40px auto;
+	max-width: 1100px;
+	align-items:center;
+	text-align:center;
+}
+.wrap .heading{
+	padding:0px 0px 0px 300px;
+	width:70%;
+	padding-bottom:50px;
+}
+.wrapper .heading h3{
+	font-size:3em;
+	font-weight:bolder;
+	padding-bottom:10px;
+	border-bottom:3px solid #222;
+}
+.wrapper .heading h3 span{
+	font-weight:100;
+}
+.wrapper nav{
+	padding-top:50px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 750px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
+.items span a{
+	text-decoration:none;
+	transition: all 0.3s ease;
+	
+}
+.items span.active,
+.items span:hover,.items span a:hover{
+	text-decoration:none;
+	color: #fff;
+	background: #007bff;
+}
+
+/*galary starts*/
+.gal{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background: black;
+  background-color: black;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex; 
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  background: none;
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  background: none;
+  border: 2px solid #D3D3D3;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #D3D3D3;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  background: none;
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  background: none;
+  border: 2px solid #D3D3D3;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #D3D3D3;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #D3D3D3;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #D3D3D3;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #D3D3D3;
+}
+
+/*galary css ends*/
+
+/*new galary starts */
+
+h2{
+    color: brown;
+    font-family: Arial;
+    text-align: center;
+    font-size: 50pt;
+    font-weight: lighter;
+}
+
+.new{
+    background: black;
+    background-color: black;
+}
+
+#img-gal{
+    background: black;
+    background-color: black;
+    height: 360px;
+    padding: 50px;
+}
+
+
+/*footer css starts*/
+
+/*Here on wards footer css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+ul{
+	list-style: none;
+	background-color: #24262b;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   background-color: #24262b;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+	background-color: #24262b;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+	background-color: #24262b;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+	background-color: #24262b;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links{
+	background-color:#24262b;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: blue;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+	
+}
+.footer .container .copy
+{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 5px;
+	background-color:#24262b ;
+	color:white;
+	margin-top: 25px;
+}
+.footer .container
+{
+	background-color:#24262b ;
+}
+.footer .container .copy span
+{
+	background-color:#24262b ;
+	
+}
+
+
+/*css for footer ends*/
